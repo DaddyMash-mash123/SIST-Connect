@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Us | SIST Connect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="images/sist-connect-logo.png"
+                     alt="SIST Connect Logo">
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="about.html">ABOUT US ▼</a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="about.html#who-we-are">
+                                Who We Are
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html#objectives">
+                                Objectives
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html#mission">
+                                Mission & Vision
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+
+                    <a href="activities.html">
+                        ACTIVITIES ▼
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="activities.html#workshops">
+                                Workshops
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="activities.html#coding">
+                                Coding
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="activities.html#hackathons">
+                                Hackathons
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="activities.html#seminars">
+                                Seminars
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="activities.html#events">
+                        EVENTS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">
+                        GALLERY
+                    </a>
+                </li>
+
+                <li>
+                    <a href="activities.html#projects">
+                        PROJECTS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        CONTACT US
+                    </a>
+                </li>
+
+                <li>
+                  
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Join SIST Connect</h1>
+
+            <h2>Connect • Learn • Create • Innovate</h2>
+
+            <p>
+                Become part of a community where students
+                can learn, collaborate and explore technology.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT INTRODUCTION
+    ========================== -->
+
+    <section class="section">
+
+        <h2>Get Involved</h2>
+
+        <p>
+            Interested in technology, programming, innovation
+            and collaboration? Complete the form below to
+            express your interest in joining SIST Connect.
+        </p>
+
+        <p>
+            Please provide accurate information so that your
+            submission can be processed correctly.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         JOIN FORM
+    ========================== -->
+
+    <section class="section">
+
+        <h2>Membership / Contact Form</h2>
+
+        <form id="joinForm"
+              action="php/process-form.php"
+              method="POST"
+              onsubmit="return validateForm()">
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PROGRAMME -->
+
+            <div class="form-group">
+
+                <label for="programme">
+                    Programme / Course
+                </label>
+
+                <input
+                    type="text"
+                    id="programme"
+                    name="programme"
+                    placeholder="Enter your programme"
+                    required
+                >
+
+            </div>
+
+
+            <!-- YEAR -->
+
+            <div class="form-group">
+
+                <label for="year">
+                    Year of Study
+                </label>
+
+                <select id="year"
+                        name="year"
+                        required>
+
+                    <option value="">
+                        Select your year
+                    </option>
+
+                    <option value="1">
+                        First Year
+                    </option>
+
+                    <option value="2">
+                        Second Year
+                    </option>
+
+                    <option value="3">
+                        Third Year
+                    </option>
+
+                    <option value="4">
+                        Fourth Year
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- INTEREST -->
+
+            <div class="form-group">
+
+                <label for="interest">
+                    Area of Interest
+                </label>
+
+                <select id="interest"
+                        name="interest"
+                        required>
+
+                    <option value="">
+                        Select an area
+                    </option>
+
+                    <option value="Web Development">
+                        Web Development
+                    </option>
+
+                    <option value="Programming">
+                        Programming
+                    </option>
+
+                    <option value="Innovation">
+                        Innovation
+                    </option>
+
+                    <option value="Cybersecurity">
+                        Cybersecurity
+                    </option>
+
+                    <option value="Data Science">
+                        Data Science
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Tell us why you would like to join..."
+                    required></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <div class="form-button">
+
+                <button type="submit"
+                        class="btn primary-btn">
+                    SUBMIT APPLICATION
+                </button>
+
+                <button type="reset"
+                        class="btn secondary-btn">
+                    CLEAR
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT INFORMATION
+    ========================== -->
+
+    <section class="section">
+
+        <h2>Contact Information</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+
+                <div class="card-icon">📧</div>
+
+                <h3>Email</h3>
+
+                <p>
+                    Use the membership form above to
+                    send your enquiry.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">💻</div>
+
+                <h3>Technology</h3>
+
+                <p>
+                    Participate in technology-related
+                    activities and projects.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🤝</div>
+
+                <h3>Collaboration</h3>
+
+                <p>
+                    Connect and work with other students
+                    on innovative ideas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h2>SIST Connect</h2>
+
+        <p>
+            Connecting students through technology,
+            innovation and collaboration.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 SIST Connect. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
